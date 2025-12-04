@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kelas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Jadwal Sekolah</h1>
+            <p id="current-date">Memuat tanggal...</p>
+        </header>
+        <div class="days-nav">
+            <button class="day-btn" onclick="openDay('senin')">Senin</button>
+            <button class="day-btn" onclick="openDay('selasa')">Selasa</button>
+            <button class="day-btn" onclick="openDay('rabu')">Rabu</button>
+            <button class="day-btn" onclick="openDay('kamis')">Kamis</button>
+            <button class="day-btn" onclick="openDay('jumat')">Jumat</button>
+            <button class="day-btn" onclick="openDay('sabtu')">Sabtu</button>
+        </div>
+        <div id="senin" class="schedule-list">
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">07:45</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Pend. Agama</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i> Bu. Harmi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">10:15</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Bimbingan Konseling</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>Bu.Eny</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">15:15</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">apalah intinya mapel Promosi</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Kelik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="selasa" class="schedule-list">
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">7:45</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Program TKJ</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Okky</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">10:15</span>
+                    <span class="end-time">13:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Matematika</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>Gtw jir lupa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rabu" class="schedule-list">
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">07:45</span>
+                    <span class="end-time">08:30</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">PKN</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>Bu. Dita</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">08:30</span>
+                    <span class="end-time">10:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Bhs. Jawa</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Bara</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">10:15</span>
+                    <span class="end-time">15:15</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Program TKJ</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Okky</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kamis" class="schedule-list">
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">07:45</span>
+                    <span class="end-time">09:15</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Bhs. Indo</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i> Bu. Tiara</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">09:15</span>
+                    <span class="end-time">11:00</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Olahraga Coy</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Prawito</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">11:00</span>
+                    <span class="end-time">11:45</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Program TKJ</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>P. Abu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jumat" class="schedule-list">
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">07:00</span>
+                    <span class="end-time">08:20</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Sejarah</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>Bu. Rus</span>
+                    </div>
+                </div>
+            </div>
+            <div class="class-card">
+                <div class="time-box">
+                    <span class="start-time">08:20</span>
+                    <span class="end-time">11:15</span>
+                </div>
+                <div class="info-box">
+                    <div class="subject">Bhs. Inggris</div>
+                    <div class="details">
+                        <span><i class="fas fa-user"></i>Bu. Tyas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sabtu" class="schedule-list">
+            <div class="no-class">
+                <i class="fas fa-couch"></i>
+                <h3>Libur!</h3>
+                <p>Tidak ada kelas hari ini.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('id-ID', dateOptions);
+
+        function openDay(dayId) {
+            const contents = document.querySelectorAll('.schedule-list');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.day-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(dayId).classList.add('active');
+
+            const activeBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(dayId));
+            if (activeBtn) activeBtn.classList.add('active');
+        }
+        function autoSelectDay() {
+            const days = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
+            const today = new Date().getDay();
+            let dayName = days[today];
+            if (dayName === 'minggu') dayName = 'senin';
+            openDay(dayName);
+        }
+        autoSelectDay();
+    </script>
+</body>
+</html>
